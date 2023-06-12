@@ -1,0 +1,402 @@
+body{
+    /* font-family: 'Koulen', cursive; */
+    font-family: 'Battambang', cursive;
+    margin: 0;
+}
+h1, h2, p, ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+div{
+    box-sizing: border-box;
+}
+.bar1{
+    width: 100%;
+    float: left;
+    background-color: black;
+    padding: 10px;
+}
+.logo-box{
+    width: 80%;
+    /* float: left; */
+    margin: auto;
+    overflow: hidden;
+}
+.logo{
+    width: 30%;
+    float: left;
+}
+.logo img{
+    height: 90px;
+    float: left;
+}
+.ads1{
+    width: 70%;
+    float: left;
+}
+.ads1 a img{
+    margin-left: 2px;
+    float: right;
+    width: 300px;
+    height: 90px;
+}
+.menu-bar{
+    width: 100%;
+    float: left;
+    background-color: red;
+}
+.menu{
+    width: 80%;
+    margin: auto;
+    background-color: orange;
+}
+.menu li{
+    float: left;
+}
+.menu li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Koulen', cursive;
+}
+.menu li a:hover{
+    color: blue;
+}
+.container{
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 10px;
+    padding: 10px;
+}
+.slide-box{
+    width: 65%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.slide-box .box1::before, .slide-box .box2::before{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.201);
+}
+.slide-box .box1:hover:before, .slide-box .box2:hover:before{
+    background-color: rgba(0, 0, 0, 0.500);
+}
+.slide-box .box1, .slide-box .box2{
+    position: relative;
+    width: 60%;
+    height: 50%;
+    overflow: hidden;
+    float: left;
+}
+.slide-box .box1 .sport-box, .slide-box .box2 .sport-box{
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 70px;
+    height: 30px;
+    background-color: rgba(255, 0, 0, 0.715);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100%, 100%, 100% 100%, 75% 0);
+    clip-path: polygon(0 0,0 100%, 100% 100%, 100% 100%, 75% 0);
+}
+.slide-box .box1 img,.slide-box .box2 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+.slide-box .box1 .title-box, .slide-box .box2 .title-box{
+    width: 100%;
+    float: left;
+    position: absolute;
+    padding: 10px;
+    bottom: -50px;
+    left: 0;
+    background-image: linear-gradient(to top,black,rgba(128, 128, 128, 0));
+    transition: 0.4s;
+}
+.slide-box .box1 .title-box h2, .slide-box .box2 .title-box h2{
+    font-size: 18px;
+    color: white;
+}
+.slide-box .box1 a, .slide-box .box2 a{
+    text-decoration: none;
+}
+.slide-box .box1 .title-box p, .slide-box .box2 .title-box p{
+    color: whitesmoke;
+    font-size: 12px;
+    visibility: hidden;
+}
+.slide-box .box1:hover .title-box p, .slide-box .box2:hover .title-box p{
+    visibility: visible;
+}
+.slide-box .box1:hover .title-box, .slide-box .box2:hover .title-box{
+    bottom: 0;
+}
+.slide-box .box1:hover h2, .slide-box .box2:hover h2{
+    color: red;
+}
+.slide-box .box2{
+    width: 40%;
+    height: 50%;
+    float: left;
+}
+.ads2{
+    width: 33.5%;
+    height: 100%;
+    margin-left: 1.5%;
+    float: left;
+}
+.ads2 ul{
+    width: 100%;
+    height: 100%;
+}
+.ads2 ul li{
+    width: 100%;
+    height: 50%;
+    float: left;
+}
+.ads2 ul li a img{
+    width: 100%;
+    height: 100%;
+}
+.ads2 ul li a iframe{
+    width: 100%;
+    height: 100%;
+}
+.new-container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 15px;
+    /* background-color: rosybrown; */
+    padding: 10px;
+}
+.new-container .cate-title{
+    width: 100%;
+    float: left;
+    border-bottom: 4px solid crimson;
+}
+.new-container .cate-title h2{
+    background-color: crimson;
+    color: white;
+    font-size: 16px;
+    float: left;
+    padding: 7px 20px;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100%, 100%, 100% 100%, 75% 0);
+    clip-path: polygon(0 0,0 100%, 100% 100%, 100% 100%, 75% 0);
+}
+.new-container .box{
+    width: 100%;
+    float: left;
+    box-shadow: 1px 1px 5px 0 black;
+    padding: 15px;
+}
+.new-container .box .box1{
+    width: 30%;
+    height: 300px;
+    float: left;
+}
+.new-container .box .box1:hover img{
+    transform: scale(1.2);
+}
+.new-container .box .box1 .img-box{
+    width: 100%;
+    height: 65%;
+    float: left;
+    background-color: dimgray;
+    overflow: hidden;
+}
+.new-container .box .box1 .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+.new-container .box .box1 .txt-box{
+    width: 100%;
+    height: 35%;
+    float: left;
+    background-color: rgba(255, 105, 180, 0.39);
+    font-size: 18px;
+    padding: 10px;
+}
+.new-container .box .box1 .txt-box a{
+    text-decoration: none;
+}
+.new-container .box .box2{
+    width: 68%;
+    height: 300px;
+    float: left;
+    margin-left: 2%;
+}
+.new-container .box .box2 .item-box{
+    width: 24.5%;
+    height: 50%;
+    float: left;
+    margin: 0 0.25%;
+}
+.new-container .box .box2 .item-box .img-box{
+    width: 100%;
+    height: 65%;
+    float: left;
+    background-color: blue;
+}
+.new-container .box .box2 .item-box .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.new-container .box .box2 .item-box .txt-box{
+    width: 100%;
+    height: 35%;
+    float: left;
+}
+.new-container .box .box2 .item-box .txt-box p{
+    font-size: 12px;
+
+}
+.new-container .cate-title1{
+    width: 100%;
+    float: left;
+    border-bottom: 4px solid green;
+}
+.new-container .cate-title1 h2{
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    float: left;
+    padding: 7px 25px;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100%, 100%, 100% 100%, 75% 0);
+    clip-path: polygon(0 0,0 100%, 100% 100%, 100% 100%, 75% 0);
+}
+.new-container .cate-title2{
+    width: 100%;
+    float: left;
+    border-bottom: 4px solid orange;
+}
+.new-container .cate-title2 h2{
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    float: left;
+    padding: 7px 30px;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100%, 100%, 100% 100%, 75% 0);
+    clip-path: polygon(0 0,0 100%, 100% 100%, 100% 100%, 75% 0);
+}
+.bottom-bar{
+    margin-top: 30px;
+    width: 100%;
+    height: 250px;
+    float: left;
+    background-color: black;
+    padding: 30px 40px;
+}
+.bottom-bar .box1{
+    width: 32.5%;
+    height: 100%;
+    float: left;
+    /* text-align: center; */
+    position: relative;
+    /* background-color: aqua; */
+}
+.bottom-bar .box1 img{
+    margin-left: 123px;
+    width: 110px;
+    height: 50px;
+}
+.bottom-bar .box1 .des-box{
+    position: absolute;
+    width: 68%;
+    height: 180px;
+    top: 26%;
+    right: 0;
+}
+.bottom-bar .box1 .des-box p{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: white;
+}
+.bottom-bar .box1 .des-box span{
+    font-weight: bold;
+    color: white;
+}
+.bottom-bar .box2{
+    width: 42%;
+    height: 100%;
+    float: left;
+}
+.bottom-bar .box2 .nth-box{
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+.bottom-bar .box2 .des-box{
+    width: 90%;
+    height: 100%;
+    float: left;
+}
+.bottom-bar .box2 .des-box b{
+    font-family: 'Koulen', cursive;
+    font-size: 18px;
+    color: white;
+}
+.bottom-bar .box2 .des-box p{
+    margin-top: 15px;
+    color: white;
+    font-size: 14px;
+}
+.bottom-bar .box2 .des-box .logo{
+    width: 100%;
+    height: 40px;
+    float: left;
+    margin-top: 10px;
+}
+.bottom-bar .box2 .des-box .logo .item-logo{
+    width: 9%;
+    height: 100%;
+    float: left;
+    margin-right: 5px;
+}
+.bottom-bar .box2 .des-box .logo .item-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bottom-bar .box3{
+    width: 25.5%;
+    height: 100%;
+    float: left;
+}
+.bottom-bar .box3 strong{
+    font-family: 'Koulen', cursive;
+    font-size: 18px;
+    color: white;
+}
+.bottom-bar .box3 .icon-box{
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 0.708);
+    font-size: 28px;
+}
+.bottom-bar .box3 p{
+    /* margin-top: 7px; */
+    font-weight: bold;
+    color: white;
+}
+.bottom-bar .box3 span{
+    color: white;
+    font-size: 10px;
+
+}
